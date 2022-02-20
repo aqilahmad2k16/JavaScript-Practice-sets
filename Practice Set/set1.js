@@ -145,19 +145,19 @@ function myfunction(p1, p2){// called function definition
 // in order use the function we will have to invoke/call it by passing parameter
 
 let prod = myfunction(2,20);// here values 2, 20 are argument that we are sending to function
-console.log(prod);
+// console.log(prod);
 
 /// here we can use function as variable like in given line
-console.log("the product of " + 2 + " and " + 20 + " is " + myfunction(2,20));
+// console.log("the product of " + 2 + " and " + 20 + " is " + myfunction(2,20));
 
 // Local Variable : variable declares within the function becomes the local to the function then we can't use that variable out of the function as shown below
 
 // we can't use myboryear here too
-function mycal(age){
-    let myboryear = 1995;
-    // here myboryear is local to this function, it's mean that we can use it anywhere inside this function
-    return (age-myboryear);
-}
+// function mycal(age){
+//     let myboryear = 1995;
+//     // here myboryear is local to this function, it's mean that we can use it anywhere inside this function
+//     return (age-myboryear);
+// }
 
 // we can't use myboryear variable here
 // console.log(mycal(2022));
@@ -177,13 +177,13 @@ function mycal(age){
 
 // object is key:value pair and this key value come under curly brases{}
 
-const car = {
-    type: "Fiat", 
-    model: "500",
-    color: "white",
-    start: function(){
-        console.log("your has already started please make sure that you have tie with belt for better riding");
-        console.log(this.type + "\n"+this.color);
+// const car = {
+//     type: "Fiat", 
+//     model: "500",
+//     color: "white",
+//     start: function(){
+//         console.log("your has already started please make sure that you have tie with belt for better riding");
+//         console.log(this.type + "\n"+this.color);
         // what is "this" keyword: In JavaScript, the this keyword refers to an object.
         //this is not a variable. It is a keyword. You cannot change the value of this.//
         //Which object depends on how this is being invoked (used or called)
@@ -195,8 +195,8 @@ const car = {
         // In an event, this refers to the element that received the event.
         // Methods like call(), apply(), and bind() can refer this to any object.
         
-    }
-}
+//     }
+// }
 // console.log(car);
 
 // we can access properties of an object like
@@ -217,18 +217,232 @@ const car = {
  // 2nd Square bracket
  // objectName.["propertiesName"];
  
- let car1 = car["type"]
+//  let car1 = car["type"]
+// //   car1 = car["model"]
+//  console.log(car1);
 //   car1 = car["model"]
- console.log(car1);
-  car1 = car["model"]
- console.log(car1);
-  car1 = car["color"]
- console.log(car1);
-  car1 = car.start();
+//  console.log(car1);
+//   car1 = car["color"]
+//  console.log(car1);
+//   car1 = car.start();
 
+
+// String; it's a array of character, it's use for storing and manipulating the text
+// when you create a string make sure that it should be under double quotes 
+// a string can stor zero and more characters
+
+// let myName = "Aqil Ahmad";
+// console.log(myName);
+
+// let mybrother = 'Shakeel Ahmad'
+// console.log(mybrother);
     
+// In order to find the length of our string, we can find by simply using the built-in "length" property
+
+// console.log(mybrother.length);
+
+
+// we can break a longer code to it's next line let's an exmple
+
+// document.getElementById("demo").innerHTML = // we have broke the this line to next line(just below) it
+
+// "Hellow World";
+
+// but in string, we can separate two string by string addition
+
+// console.log("myName " + myName +" mybrother " + mybrother);
+// let myAge = "";
+// console.log(myAge);
+
+// javaScript string as objects
+// we know string are primitives value, and created from literals 
+// let z = "JOne";
+// console.log(z);
+// we can also defined string as object as shown
+
+// let y = new String("Jone");
+// console.log(y)
+
+// Do not create Strings objects.
+
+// The new keyword complicates the code and slows down execution speed.
+
+// String objects can produce unexpected results:
 
 
 
+// String methods and Properties
+// Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).
 
+// But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties
+
+// properties
+// 1st Length property
+// this property return length of the stirng
+
+let text = "asdlkhfashdfjasjjlasdjfshheo";
+// console.log(text.length);
+
+
+// Extracting String parts
+
+/// we can get the segment of stirng by 3 methods
+//1st slice(start_index, end_index);
+// slice() extracts a part of a string and returns the extracted part in a new string.
+
+// The method takes 2 parameters: the start position, and the end position (end not included).
+
+// This example slices out a portion of a string from position 7 to position 12 (13-1)
+// If a parameter is negative, the position is counted from the end of the string.
+
+// This example slices out a portion of a string from position -12 to position -6
+
+let str = "Apple, Banana, Guvava, pineApple";
+
+// let ptstr = str.slice(7, 21);
+// // console.log(ptstr);
+
+// let str1 = "fdgfApplebanana";
+// ptstr = str1.slice(-12, -6);
+// console.log(ptstr);
+// If you omit the second parameter, the method will slice out the rest of the string
+// if you don't assign any value to the slice function then it will return you all text
+// console.log(str.slice());
+
+// 2nd substring()
+//substring() is similar to slice().
+
+// The difference is that substring() cannot accept negative indexes.
+// 
+
+// console.log(str.substring(3,12));
+// // If you omit the second parameter, substring() will slice out the rest of the string.
+// console.log(str.substring());
+
+// 3rd substr:
+/// substr is similar to slice()
+//The difference is that the second parameter specifies the length of the extracted part.
+
+// console.log(str.substr(7, 21));// end index 21 and 5 represent the length of stirng that we want to take from starting index.
+// console.log(str.substr(7, 5));
+// //If the first parameter is negative, the position counts from the end of the string
+// console.log(str.substr(-4));
+
+// If you omit the second parameter, substr() will slice out the rest of the string
+// console.log(str.substr(7));
+
+
+// 2nd method: (Replacing the string content)
+// let tex = "Please visit Microsoft";
+// // console.log(tex);
+// // let newText = tex.replace("Microsoft", "Google");
+// // console.log(newText);
+
+// tex = "I supposed to start my job after graduation"
+// console.log(tex);
+// console.log(tex.replace("supposed to start", "wanted to do"));
+
+// The replace() method does not change the string it is called on.
+
+// The replace() method returns a new string.
+
+// The replace() method replaces only the first match
+
+// If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+
+// By default, the replace() method replaces only the first match
+
+// By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work:
+
+let text1 = "Please visit Microsoft!";
+let newText = text1.replace("MICROSOFT", "W3Schools");
+// console.log(newText);
+
+
+// converting uppercase and lowercase
+// 3rd toUppercase() and toLowercase();
+
+// A string is converted to upper case with toUpperCase():
+
+// A string is converted to lower case with toLowerCase()
+// let aman = "why are you here ?";
+// let amanCapital = aman.toUpperCase();
+// console.log(amanCapital);
+
+// aman = "WHY ARE YOU HERE?";
+// let newName = aman.toLowerCase();
+// console.log(newName);
+
+// // 4rth method String concat();
+
+// // concat() joins two or more strings:
+// let firstName = "Aqil";
+// let secondName = 'Ahmad';
+// let fullName = firstName.concat(" ", secondName);
+// console.log(fullName);
+
+// // The concat() method can be used instead of the plus operator. These two lines do the same
+// console.log(fullName);
+// console.log(firstName + " " + secondName);
+// All string methods return a new string. They don't modify the original string.
+
+// Formally said:
+
+// Strings are immutable: Strings cannot be changed, only replaced.
+
+
+// 5th method String trim();
+//The trim() method removes whitespace from both sides of a string
+
+firstName = "    Aqil Ahmad";
+// console.log(firstName.trim());
+
+// 6th method String padStart() and padEnd();ECMAScript 2017 added two String methods: padStart and padEnd to support padding at the beginning and at the end of a string.
+
+// 7th method Extracting string character
+
+// by 3 methods we can extract string characters
+// 1st charAt(index);
+//The charAt() method returns the character at a specified index (position) in a string
+// let listofCompany = "google, MicroSoft, facebook, Amazon, Infosis, TCS";
+// let char = listofCompany.charAt(0);
+// console.log(char);
+// console.log(listofCompany.charAt(1)); // charAt() will return you character at given index;
+// console.log(listofCompany.charAt(2));
+// console.log(listofCompany.charAt(3));
+
+
+// 2nd charCodeAt(index);
+// //The charCodeAt() method returns the unicode of the character at a specified index in a string
+// //The method returns a UTF-16 code (an integer between 0 and 65535)
+// let text2 = "HELLO WORLD";
+// let char = text.charCodeAt(0);
+// console.log(char);
+
+// //3rd Property access;
+// // allows property access [ ] on strings:
+
+// let text3 = "HELLO WORLD";
+//  char = text[0];
+// console.log(char)
+
+
+// CONVERTING STRING TO AN ARRAY
+//If you want to work with a string as an array, you can convert it to an array.
+
+// String split(): use to convert string to an array
+
+let alph = "a, b, c, d, e";
+// const myArray = alph.split(","); // return an array on the basis of commas
+// const myArray = alph.split(" ");// return an array on the basis of spaces
+// const myArray = alph.split("|");// -----------------------------of pipe
+// console.log(myArray);
+
+
+// If the separator is omitted, the returned array will contain the whole string in index [0].
+let myArray = alph.split();// -----------------------------of pipe
+
+// If the separator is "", the returned array will be an array of single characters
+ myArray = alph.split("");// -----------------------------of pipe
+console.log(myArray);
 
