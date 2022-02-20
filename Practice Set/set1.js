@@ -160,9 +160,73 @@ function mycal(age){
 }
 
 // we can't use myboryear variable here
-console.log(mycal(2022));
-console.log(myboryear);
+// console.log(mycal(2022));
+// console.log(myboryear);
 
+
+
+
+//Object: in real life, a car is an object
+
+// we know that an object has properties as well as behaviour
+// properties of object like car are: color, weight, size etc 
+// behaviour of object are : start and shop.(something that's going to be an action) i.e, start, drive, brake, stop.
+//Methods are actions that can be performed on objects and method function stores as property inside the object
+
+// object are variable too, but it stores many values
+
+// object is key:value pair and this key value come under curly brases{}
+
+const car = {
+    type: "Fiat", 
+    model: "500",
+    color: "white",
+    start: function(){
+        console.log("your has already started please make sure that you have tie with belt for better riding");
+        console.log(this.type + "\n"+this.color);
+        // what is "this" keyword: In JavaScript, the this keyword refers to an object.
+        //this is not a variable. It is a keyword. You cannot change the value of this.//
+        //Which object depends on how this is being invoked (used or called)
+        //The this keyword refers to different objects depending on how it is used:
+        // In an object method, this refers to the object.
+        // Alone, this refers to the global object.
+        // In a function, this refers to the global object.
+        // In a function, in strict mode, this is undefined.
+        // In an event, this refers to the element that received the event.
+        // Methods like call(), apply(), and bind() can refer this to any object.
+        
+    }
+}
+// console.log(car);
+
+// we can access properties of an object like
+// In two ways you can access object properties
+//1st by . operator
+// objectName.propertiesName
+
+// let car1 = car.type
+//  car1 = car.type
+// console.log(car1);
+//  car1 = car.model
+// console.log(car1);
+//  car1 = car.color
+// console.log(car1);
+//  car1 = car.start()
+ // console.log(car1);
+ 
+ // 2nd Square bracket
+ // objectName.["propertiesName"];
+ 
+ let car1 = car["type"]
+//   car1 = car["model"]
+ console.log(car1);
+  car1 = car["model"]
+ console.log(car1);
+  car1 = car["color"]
+ console.log(car1);
+  car1 = car.start();
+
+    
 
 
 
