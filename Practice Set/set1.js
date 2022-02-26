@@ -440,9 +440,121 @@ let alph = "a, b, c, d, e";
 
 
 // If the separator is omitted, the returned array will contain the whole string in index [0].
-let myArray = alph.split();// -----------------------------of pipe
+// let myArray = alph.split();// -----------------------------of pipe
 
-// If the separator is "", the returned array will be an array of single characters
- myArray = alph.split("");// -----------------------------of pipe
-console.log(myArray);
+// // If the separator is "", the returned array will be an array of single characters
+//  myArray = alph.split("");// -----------------------------of pipe
+// console.log(myArray);
+
+// ####String Search:
+//JavaScript Search Methods
+// String indexOf()
+// String lastIndexOf()
+// String startsWith()
+// String endsWith()
+
+
+// 1st indexOf():The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string.
+
+// let str1 = "Please locate where 'locate'";
+// console.log(str1.indexOf("locate"));
+
+//2nd lastindexOf();The lastIndexOf() method returns the index of the last occurrence of a specified text in a string
+
+// console.log(str1.lastIndexOf("locate"));
+
+//The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.
+
+// console.log(str1.lastIndexOf("locate", 15));
+
+//The two methods, indexOf() and search(), are equal?
+
+// They accept the same arguments (parameters), and return the same value?
+
+// The two methods are NOT equal. These are the differences:
+
+// The search() method cannot take a second start position argument.
+// The indexOf() method cannot take powerful search values (regular expressions)
+//
+
+// 3rd match();
+//The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object
+
+// console.log(str1.match("loca"));
+//If a regular expression does not include the g modifier (to perform a global search), the match() method will return only the first match in the string.
+
+// Perform a global, case-insensitive search for "ain":
+
+// let text = "The rain in SPAIN stays mainly in the plain";
+// text.match(/ain/gi)
+
+// include(): The includes() method returns true if a string contains a specified value
+let abc = "how I can make body in good/awesome shape";
+
+// console.log(abc.includes("make"));// return true
+// console.log(abc.includes("Aqil"));// return false
+
+// Syntax
+// string.includes(searchvalue, start)
+// searchvalue	Required. The string to search for
+// start	Optional. Default 0. Position to start the search
+// Returns:	Returns true if the string contains the value, otherwise false
+
+//startsWith(): The startsWith() method returns true if a string begins with a specified value, otherwise false
+//string.startsWith(searchvalue, start)
+// console.log(abc.startsWith("how"));
+// console.log(abc.startsWith("Aqil"));
+// console.log(abc.startsWith("I", 4));
+// // ## endsWith():The endsWith() method returns true if a string ends with a specified value, otherwise false:
+// string.endswith(searchvalue, length)
+// console.log(abc.endsWith("shape"));
+
+//#### String Template**********************************************************************************
+//emplate Literals
+// Synonyms:
+
+// Template Literals
+// Template Strings
+// String Templates
+// Back-Tics Syntax
+
+// ### Back-Tics Syntex:Template Literals use back-ticks (``) rather than the quotes ("") to define a string
+let text3 = `Hello World`;
+// console.log(text3);
+
+//With template literals, you can use both single and double quotes inside a string
+
+text3 = `I am an engineer 'and besides" it I am also a teacher`;
+// console.log(text3);
+
+//Template literals allows multiline strings:
+
+text3 = `hey, you know what today I consulted to a doctor through online
+and it was telecommunication`;
+// console.log(text3);
+
+// //Interpolation
+// Template literals provide an easy way to interpolate variables and expressions into strings.
+
+// The method is called string interpolation
+//Syntex: ${}.
+//Variable Substitutions
+// Template literals allow variables in strings
+
+let firstname = 'Aqil';
+let lastname = 'Ahmad';
+text3 = `Welcome ${firstname} ${lastname}!`
+console.log(text3);
+
+//Expression Substitution
+// Template literals allow expressions in strings:
+
+// Example
+// let price = 10;
+// let VAT = 0.25;
+
+// let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+
+
 
