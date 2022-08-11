@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-decoration: underline rgb(9, 9, 9);
+            }
+
+            form{
+                background-color: rgb(107, 99, 123);
+                width: 35%;
+                opacity: 0.8;
+                padding-left: 40px;
+                padding-bottom: 20px;
+                padding-right: 40px;
+                padding-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: .5cm;
+                color: white;
+                line-height: 1.5;
+                border-radius: 5px;
+                
+            }
+
+            body{
+            
+                background-image: url('https://www.timeshighereducation.com/sites/default/files/hands-being-raised-for-survey-illustration.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 5px;
+              
+            }
+
+            #list{
+                margin: 0;
+                padding: 0;
+            }
+
+           form> h2{
+            margin: 0;
+            padding: 0;
+            }
+
+            #id1, #id2, #id3{
+                border: 2px solid black;
+                border-radius: 5px;
+                height: 20px;
+            
+            }
+
+            #id1, #id2{
+                width: 350px;
+            }
+
+            #id3{
+                width: 150px;
+            }
+
+            #Occupations{
+                border: 2px solid black;
+                border-radius: 5px;
+                height: 27px;
+            }
+
+           
+        </style>
+    </head>
+
+    <body >
+        <h1>Ms Technology Survey Form</h1>
+
+        
+        <form id="survey"  action="/action_page.php" method="get">
+            <h2 style="font-family: Arial, Helvetica, sans-serif;">Survey Form</h2>
+            <ul id="list">
+                <li>
+
+                    Name <br> <input id="id1" type="text" name=""><br>
+                </li>
+                <li>
+
+                    Email <br> <input id="id2" type="email" name=""><br>
+                </li>
+
+                <li>
+
+                    Age <br> <input id="id3" type="number" name=""><br>
+                </li>
+
+                <li>
+
+                    <label for="Occupation">Which option is best describe you?</label><br>
+                    <select id="Occupations" name="Occupation">
+                        <option>Select</option>
+                        <option>Student</option>
+                        <option>Engineer</option>
+                        <option>Doctor</option>
+                        <option>Teacher</option>
+                        <option>Unemployee</option>
+                    </select>
+                </li>
+
+                <li>
+
+                    <div>
+        
+                        <lable for="Choice">Would you recommend this to your friend?</lable><br>
+                        <label ><input type="radio" name="css">Yes</label><br>
+                        <label ><input type="radio" name="css">No</label><br>
+                        <label ><input type="radio" name="css">Maybe</label>
+                    </div>
+                </li>
+
+                <li>
+
+                    <label for="language known">Languages and Frameworks known <smalll>(Check all that apply)</smalll></label><br>
+                    <div>
+        
+                        <label><input type="checkbox" name="language">C</label><br>
+                        <label><input type="checkbox" name="language">C++</label><br>
+                        <label><input type="checkbox" name="language">Pythan</label><br>
+                        <label><input type="checkbox" name="language">Java</label><br>
+                        <label><input type="checkbox" name="language">PHP</label><br>
+                        <label><input type="checkbox" name="language">SpringBoot</label><br>
+                        <label><input type="checkbox" name="language">JavaScript</label><br>
+                        <label><input type="checkbox" name="language">Django</label><br>
+                        <label><input type="checkbox" name="language">React</label><br>
+                        <label><input type="checkbox" name="language">Node.js</label><br>
+                        <label><input type="checkbox" name="language">Angular</label><br>
+                        <label><input type="checkbox" name="language">Data Scrince</label>
+                    </div>
+                </li>
+
+                <li>
+
+                    <label>Any comments and suggestions</label><br>
+                    <textarea id="comment" name="message" style="width: 400px; height: 50px;" ></textarea>
+                </li>
+
+                <li>
+
+                    <label><input type="checkbox" name="agree">I agree the given terms and conditions</label>
+                </li>
+                
+                <li style="list-style-type: none;">
+
+                    <lable><input id="sub" type="submit" name="Submit"></lable>
+                    <label><input id="res" type="reset" name="Reset" style="margin-left: 40px;"></label>
+                </li>
+            </ul>
+            
+
+
+
+
+
+        
+
+        </form>
+    </body>
+</html>

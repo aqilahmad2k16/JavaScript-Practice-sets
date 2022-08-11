@@ -1,0 +1,87 @@
+/* 
+*{
+    box-sizing: border-box;
+} */
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 50px;
+}
+    
+    
+
+form{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: antiquewhite;
+    width: 50%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 80px -45px grey;
+}
+
+
+ #user_name,#prac_time, #fav_player_details,#sch_url,#weight,#nam,#gen,#fname, #mname,#dofbirth, #pofbirth,#cont_phone, #details, #certificate, #phone, #sports, #student_sign, #sub{
+    margin-top: 30px;
+    
+}
+
+#user_name,#prac_time, #fav_player_details,#sch_url,#weight,#search, #paste_image,#nam, #gen, #fname, #mname,#dofbirth, #pofbirth,#cont_phone, #details, #certificate, #phone, #sports, #student_sign, #sub{
+    line-height: 2;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+form>h1{
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#pofbirth{
+    line-height: 3;
+}
+
+#son_name_2, #father_name_2, #mother_name_2, #player_name2{
+    margin-left: 40px;
+}
+
+#son_name_1,#son_name_2, #father_name_1, #father_name_2, #parent_tel, #mother_name_1, #mother_name_2{
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#search{
+    position: absolute;
+    left: 60%;
+}
+
+#whole{
+    position: relative;
+    line-height: 3;
+}
+
+#Date, #set_time, #time_week_year, #birthday_month_year, #birthday_time{
+    width: 200px;
+    height: 30px;
+    
+}
+
+#sport{
+    size: 5px;
+}
+
+

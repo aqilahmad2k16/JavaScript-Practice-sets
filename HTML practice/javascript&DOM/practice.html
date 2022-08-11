@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hey there! I am going to learn about html</title>
+    </head>
+
+    <body>
+        <!-- <img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz5JFYzkYYf_jgD8e7kZc4hAJ568u5ih73fw&usqp=CAU" alt="babyImage"> -->
+
+        <!-- <form name="myform" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+
+        </form> -->
+
+        <input id="numb">
+
+        <button type="button" onclick="myFunction()">Submit</button>
+        <p id="demo"></p>
+
+
+
+    <!-- here, if you don't enter any value, then browser will automatically throw alert
+    because here, we are using a "required attribute" - will show please fill this field->
+        <form action="/action_page.php" method="post">
+            <input  type="text" name="fname" required>
+            <input type="submit" value="Submit">
+        </form>
+
+
+
+        <script>
+        
+            // changing the value of attribute
+            // const el = document.getElementById("myImage")
+            // el.src = "https://www.healthychildren.org/SiteCollectionImagesArticleImages/hes-up-to-no-good.jpg?RenditionID=6";
+
+
+            // dynamic html content
+            // document.write(Date());
+
+
+            // javascript form validation
+            // function validateForm(){
+            //     let x = document.forms['myform']['fname'].value;
+            //     if(x == ""){
+            //         alert("Name is mandatory");
+            //         return false;
+            //     } 
+            // }
+
+            // validate the numeric value
+            function myFunction(){
+                let x = document.getElementById("numb").value;
+                let text;
+                if(isNaN(x) || x<1 || x>10){
+                    text = "input is not valid";
+                }else{
+                    text = "input is OK";
+                }
+
+                document.getElementById("demo").innerHTML = text;
+            }
+
+            // Automatic html form validation by browser
+
+            
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>let's learn about Frontend</title>
+    <style>
+        body {
+            background-image: url("https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i5f18bffcfae8e73e/version/1606405693/best-natural-wonders-in-germany-lake-hintersee-copyright-claudiu-maxim-european-best-destinations.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        button {
+            background-color: rgb(59, 57, 57);
+            border-radius: 10px;
+            color: aliceblue;
+        }
+
+        table,
+        tr,
+        th,
+        tb {
+            padding: 2px;
+            margin: 5px;
+            border: 1px solid black;
+            border-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="but" type="submit" name="Add" style="width: 100px; height: 32px">
+        Add Details
+    </button>
+    <table id="c1" style="
+        background-image: url('https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg');
+      ">
+        <tr id="c2">
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+    </table>
+
+    <script>
+        document.getElementById("but").onclick = function myfunction() {
+            const e1 = document.getElementById("c1");
+            const nRow = document.createElement("tr");
+            const celValue1 = document.createElement("td");
+            celValue1.style.border = "1px solid black";
+            celValue1.innerHTML = "Amit Gupta  ";
+            const celValue2 = document.createElement("td");
+            celValue2.style.border = "1px solid black";
+            celValue2.innerHTML = "25  ";
+            const celValue3 = document.createElement("td");
+            celValue3.style.border = "1px solid black";
+            celValue3.innerHTML = "Male";
+            nRow.appendChild(celValue1);
+            nRow.appendChild(celValue2);
+            nRow.appendChild(celValue3);
+            e1.appendChild(nRow);
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+
+    <body>
+        <!-- content of this element is changed when click on it -->
+        <h1 onclick="this.innerHTML = 'Ooops!'">click on this text!</h1>
+        <h2 onclick="changeText(this)">click on this text1!</h2>
+
+        <script>
+            //Examples of HTML events:
+
+            // When a user clicks the mouse
+            // When a web page has loaded
+            // When an image has been loaded
+            // When the mouse moves over an element
+            // When an input field is changed
+            // When an HTML form is submitted
+            // When a user strokes a key
+
+            //load vs unload
+            //onchange
+            //onmouseover vs onmouseout
+            //onmouseup vs onmousedown on click
+            
+            function changeText(id){
+                id.innerHTML = "Ooooops!";
+            }
+        </script>
+    </body>
+</html>

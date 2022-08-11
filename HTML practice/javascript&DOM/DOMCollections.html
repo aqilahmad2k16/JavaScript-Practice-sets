@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        <p>Hey there!</p>
+        <p>Hey there! what's up</p>
+        <p>Hey there! I am going to learn about html</p>
+        <p id="demo"></p>
+        <script>
+            // *******************html collection object********************************
+            //The getElementsByTagName() method returns an HTMLCollection object.
+
+            // An HTMLCollection object is an array-like list (collection) of HTML elements.
+
+            // for example "seleect all p elements in a document"
+            const myCollection = document.getElementsByTagName("p"); // this will return collection of all p tag
+            console.log(myCollection);
+            document.getElementById("demo").innerHTML = 'innerhtml of second paragraph is: '+ myCollection[1].innerHTML;
+
+            /// html collection length
+            console.log(myCollection.length);
+            // length is helpful when you loop through the elements in a collection
+            
+
+        </script>
+    </body>
+</html>

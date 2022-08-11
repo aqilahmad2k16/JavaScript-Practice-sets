@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        <div id="div1">
+            <p id="p1">this is first paragraph</p>
+            <p id="p2">this is second paragraph</p>
+        </div>
+        <script>
+            // **************creating new html element(Nodes)**************************
+
+            // const para = document.createElement("p");
+            // const node = document.createTextNode("this is third paragraph");
+            // para.appendChild(node);
+
+            // const div = document.getElementById("div1");
+            // div.appendChild(para);// .appendChild() is used to append new element as the last child of parent
+
+            // *************creating new html element(insertBefore)************************
+            // but here, .insertBefore() is used to insert that new element before the specifies element or node
+
+            // const div = document.getElementById("div1");
+            // const child = document.getElementById("p1");
+            // div.insertBefore(para, child);
+
+            //*******************Remove existing html element**************************
+            // remove the html element using remove() method
+            // let's remove p-tag having id="p1";
+
+            // const elem = document.getElementById("p1"); elem.remove();
+
+            // let's ***************remove child nodes********************************************
+
+            // const parent = document.getElementById("div1");
+            // const child1 = document.getElementById("p1");
+            // // parent.removeChild(child1);
+
+            //*********************replacing html element********************************************************
+            // using replaceChild() method to replace html element
+
+            const parent = document.getElementById("div1");
+            const child = document.getElementById("p1");
+            const para = document.createElement("p");
+            const node = document.createTextNode("this is my text");
+            para.appendChild(node);
+            parent.replaceChild(para, child);
+
+
+
+        </script>
+    </body>
+</html>

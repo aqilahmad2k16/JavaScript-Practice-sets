@@ -1,0 +1,6 @@
+CSS doubt
+1. text-align: justify;
+answer of doubt: property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight
+
+
+in the other words: space between words are uniform like in Magzine and newspaper

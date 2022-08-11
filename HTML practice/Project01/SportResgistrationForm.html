@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sport Registration form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Sport Registration Form</h1>
+
+    <form action="/action_page.php" method="get">
+      <h1 id="reg_form">Registration Form</h1>
+      <div id="search">
+        <label for="search_feild">Search</label>
+        <input
+          type="search"
+          name="search"
+          id="search_feild"
+          style="height: 30px; border-radius: 5px"
+          placeholder="Search"
+        />
+      </div>
+
+      <div id="paste_image">
+        <label for="image">Paste Your Image</label><br />
+        <input
+          type="image"
+          src="https://img.freepik.com/premium-vector/cute-kid-boy-play-soccer-as-striker_97632-1191.jpg?w=2000"
+          name="color"
+          id="image"
+          width="150"
+          style="border-radius: 5px"
+        />
+      </div>
+
+      <div id="nam">
+        <label for="son_name_1">Name</label><br />
+        <input
+          type="text"
+          id="son_name_1"
+          name="name"
+          required
+          placeholder="First"
+        />
+        <label for="son_name_2"></label>
+        <input
+          type="text"
+          id="son_name_2"
+          name="name"
+          required
+          placeholder="Last"
+        />
+      </div>
+
+      <div id="gen">
+        <label for="gender_1">Gender</label><br />
+        <label for="gender_2"
+          ><input type="radio" name="gender" id="gender_2" /> Male</label
+        ><br />
+        <label for="gender_2"
+          ><input type="radio" name="gender" id="gender_2" /> Female</label
+        >
+      </div>
+
+      <div id="weight">
+        <label for="weight">Enter Weight (between 15 to 60)</label><br />
+        <input type="range" id="weight" name="weight" min="15" max="60" />
+      </div>
+
+      <div id="fname">
+        <label for="father_name_1">Father's Full Name</label><br />
+        <input type="text" id="father_name_1" name="name" placeholder="First" />
+        <label for="father_name_2"></label>
+        <input
+          type="text"
+          id="father_name_2"
+          name="name"
+          placeholder="Last"
+        /><br />
+        <label for="parent_tele">Enter Parent's Telephone (if any) </label
+        ><br />
+        <input
+          type="tel"
+          name="telephone"
+          id="parent_tel"
+          placeholder="Telephone Number"
+        />
+      </div>
+
+      <div id="mname">
+        <label for="mother_name_1">Mother's Full Name</label><br />
+        <input type="text" id="mother_name_1" name="name" placeholder="First" />
+        <label for="mother_name_2"></label>
+        <input
+          type="text"
+          id="mother_name_2"
+          name="name"
+          placeholder="Last"
+        /><br />
+        <label for="parent_tele">Enter Parent's Telephone (if any) </label
+        ><br />
+        <input
+          type="tel"
+          name="telephone"
+          id="parent_tel"
+          placeholder="Telephone Number"
+        />
+      </div>
+
+      <div id="whole">
+        <div id="dofbirth">
+          <label for="Date">Date Of Birth:</label>
+          <input
+            type="date"
+            name="date"
+            id="Date"
+            style="
+              position: relative;
+              left: 225px;
+              width: 200px;
+              border-radius: 5px;
+            "
+          />
+        </div>
+
+        <div id="birth_time">
+          <label for="set_time">Set Time; </label>
+          <input
+            type="time"
+            name="time"
+            id="set_time"
+            style="position: relative; left: 257px; border-radius: 5px"
+          /><br />
+        </div>
+
+        <div id="birth_week">
+          <label for="time_week_year">Set Time (week); </label>
+          <input
+            type="week"
+            name="week"
+            id="time_week_year"
+            style="position: relative; left: 204px; border-radius: 5px"
+          />
+        </div>
+
+        <div id="birth_m_y">
+          <label for="birthday_month_year"
+            >Enter Birthday In Month And Year</label
+          >
+          <input
+            type="month"
+            name="month"
+            id="birthday_month_year"
+            style="position: relative; left: 90px; border-radius: 5px"
+          />
+        </div>
+
+        <div id="birth_t">
+          <label for="birthday_time">Birthday (Enter Date and Time):</label>
+          <input
+            type="datetime-local"
+            name="birthday"
+            id="birthday_time"
+            style="position: relative; left: 98px; border-radius: 5px"
+          />
+        </div>
+
+        <div id="col">
+          <label for="color">Enter Your Favourite Color:</label>
+          <input
+            type="color"
+            name="color"
+            id="color"
+            style="position: relative; left: 132px; border-radius: 5px"
+          />
+        </div>
+      </div>
+
+      <div id="pofbirth">
+        <label>Place Of Birth</label><br />
+
+        <label for="birthe"
+          >Address 1:
+          <input
+            type="text"
+            name="place of birth"
+            id="birth"
+            style="
+              width: 550px;
+              margin-left: 10px;
+              height: 20px;
+              border-radius: 5px;
+            "
+            placeholder="Address1" /></label
+        ><br />
+
+        <label for="birth"
+          >Address 2:
+          <input
+            type="text"
+            name="place of birth"
+            id="birth"
+            style="
+              width: 550px;
+              margin-left: 10px;
+              height: 20px;
+              border-radius: 5px;
+            "
+            placeholder="Address2"
+        /></label>
+        <br />
+
+        <div class="address">
+          <label for="city"
+            >City:
+            <input
+              type="text"
+              name="city"
+              id="city"
+              style="margin-left: 50px; height: 20px; border-radius: 5px"
+              placeholder="City"
+          /></label>
+
+          <label for="region" style="margin-left: 50px"
+            >Region:
+            <input
+              type="text"
+              name="region"
+              id="city"
+              style="margin-left: 50px; height: 20px; border-radius: 5px"
+              placeholder="Region" /></label
+          ><br />
+        </div>
+
+        <div class="zip_country">
+          <label for="zip_code"
+            >Zip Code:
+            <input
+              type="text"
+              name="zip_code"
+              id="zip_code"
+              style="margin-left: 15px; height: 20px; border-radius: 5px"
+              placeholder="Zip Code"
+          /></label>
+
+          <label style="margin-left: 50px">Select Country:</label>
+          <select
+            style="margin: 20px; width: 143px; height: 30px; border-radius: 5px"
+          >
+            <option>Country</option>
+            <option>India</option>
+            <option>Pakistan</option>
+            <option>Austrailia</option>
+            <option>Russia</option>
+            <option>America</option>
+            <option>Bangladesh</option>
+            <option>Nepal</option>
+            <option>Bhutan</option>
+            <option>Indonesia</option>
+            <option>UAE</option>
+            <option>Britain</option>
+            <option>China</option>
+            <option>Turkey</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="cont_phone">
+        <label for="contact_phone"></label>Contact Phone<br />
+        <input
+          type="number"
+          name="number"
+          id="contact_phone"
+          style="width: 200px; height: 22px; border-radius: 5px"
+          placeholder="Contact Number"
+        />
+      </div>
+
+      <div id="details">
+        <label for="details_school"
+          >Details Of School / College / Organization</label
+        ><br />
+        <textarea
+          name="details"
+          id="details_school"
+          style="width: 400px; height: 50px; border-radius: 5px"
+          placeholder="Add Breif Introduction about you"
+        ></textarea>
+      </div>
+
+      <div id="sch_url">
+        <label for="school_url">Enter Your School/College/University URL</label
+        ><br />
+        <input
+          type="url"
+          name="url"
+          id="school_url"
+          style="width: 200px; height: 22px; border-radius: 5px"
+          placeholder="School/College/University URL"
+        />
+      </div>
+
+      <div id="certificate">
+        <label for="certificate"
+          >Add Any Sport Certificate: <input type="file" id="certificate"
+        /></label>
+      </div>
+
+      <div id="phone">
+        <label for="phone">Phone: </label>
+        <input
+          type="number"
+          name="number"
+          id="phone"
+          style="position: relative; left: 30px; border-radius: 5px"
+          placeholder="Phone"
+        />
+        <label for="email" style="position: relative; left: 75px"
+          >Email:
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          style="
+            position: relative;
+            left: 110px;
+            width: 200px;
+            height: 22px;
+            border-radius: 5px;
+          "
+          placeholder="Email"
+        />
+      </div>
+
+      <div id="sports">
+        <label>Sports Want To Join</label><br />
+        <div class="sports_type">
+          <label><input type="checkbox" name="sport" id="sport" />Soccer</label>
+          <label
+            ><input type="checkbox" name="sport" id="sport" />Cricket</label
+          >
+          <label
+            ><input type="checkbox" name="sport" id="sport" />Volley Ball</label
+          >
+          <label
+            ><input type="checkbox" name="sport" id="sport" />Badminton</label
+          >
+          <label><input type="checkbox" name="sport" id="sport" />Hokey</label>
+          <label
+            ><input type="checkbox" name="sport" id="sport" />Bascket
+            Ball</label
+          ><br />
+          <label
+            ><input type="checkbox" name="sport" id="sport" />Cycling</label
+          >
+          <label
+            ><input type="checkbox" name="sport" id="sport" />Hand Ball</label
+          >
+          <label
+            ><input type="checkbox" name="sport" id="sport" />Kabaddi</label
+          >
+          <label
+            ><input type="checkbox" name="sport" id="sport" />Dancing</label
+          >
+          <label><input type="checkbox" name="sport" id="sport" />Chess</label>
+        </div>
+      </div>
+
+      <div id="student_sign">
+        <label for="student_sign">Student's Sign</label><br />
+        <textarea
+          style="
+            position: relative;
+            width: 250px;
+            height: 50px;
+            border-radius: 5px;
+          "
+          placeholder="Student's Sign"
+        ></textarea>
+      </div>
+
+      <div id="whole2">
+        <div id="fav_player_details">
+          <fieldset style="border-radius: 5px">
+            <legend>Favourite Player's Details</legend>
+            <div>
+              <label for="player_name1">Name</label><br />
+              <input
+                type="text"
+                name="name"
+                id="player_name1"
+                placeholder="First"
+                style="width: 250px; height: 22px; border-radius: 5px"
+              />
+              <label for="player_name2"></label>
+              <input
+                type="text"
+                name="name"
+                id="player_name2"
+                placeholder="Last"
+                style="width: 250px; height: 22px; border-radius: 5px"
+              />
+            </div>
+          </fieldset>
+        </div>
+
+        <div id="prac_time">
+          <label>Choose Time For Practice</label><br />
+          <input
+            list="practice_time"
+            name="practice"
+            style="
+              position: relative;
+              width: 300px;
+              height: 22px;
+              border-radius: 5px;
+            "
+            placeholder="Select Practice Time"
+          />
+          <datalist id="practice_time">
+            <option value="7:00 AM - 9:00 AM"></option>
+            <option value="9:00 AM - 11:00 AM"></option>
+            <option value="11:00 AM - 1:00 PM"></option>
+            <option value="2:00 PM - 3:00 PM"></option>
+            <option value="3:00 PM - 5:00 PM"></option>
+            <option value="5:00 PM - 7:00 PM"></option>
+            <option value="7:00 PM - 9:00 PM"></option>
+            <option value="7:00 PM - 9:00 PM"></option>
+          </datalist>
+        </div>
+
+        <div id="user_name">
+          <label for="user_name1">Create UserName</label><br />
+          <input
+            type="text"
+            name="username"
+            id="user_name1"
+            style="
+              position: relative;
+              width: 300px;
+              height: 22px;
+              border-radius: 5px;
+            "
+            placeholder="UserName"
+          /><br />
+          <label for="set_password">Set Password</label><br />
+          <input
+            type="password"
+            name="password"
+            id="set_password"
+            style="
+              position: relative;
+              width: 300px;
+              height: 22px;
+              border-radius: 5px;
+            "
+            placeholder="Password"
+          />
+          <input type="hidden" id="stu_Id" name="cut_Id" value="0321" />
+        </div>
+      </div>
+
+      <div id="sub">
+        <label for="sub"
+          ><input
+            type="submit"
+            name="Submit"
+            style="width: 80px; height: 30px; border-radius: 5px"
+        /></label>
+        <label for="res"
+          ><input
+            type="reset"
+            name="Reset"
+            style="
+              margin-left: 50px;
+              width: 80px;
+              height: 30px;
+              border-radius: 5px;
+            "
+        /></label>
+      </div>
+    </form>
+  </body>
+</html>

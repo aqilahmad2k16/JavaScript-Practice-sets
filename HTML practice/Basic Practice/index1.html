@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1 id="hey"></h1>
+        <!-- <div id="main"> -->
+
+            <p id="intro">hey what's up;
+            </p>
+
+            <p class="intro">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quidem eos commodi! Dignissimos iste quisquam aliquam perferendis similique excepturi eius. Deserunt, neque? At possimus libero illo eius asperiores, ea tenetur?
+            </p>
+
+            <!-- <p class="intro">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero nobis aliquid praesentium quis laboriosam error consequatur! Officia nemo unde laudantium possimus, adipisci vero rerum distinctio debitis? Deleniti rem totam vel!
+            </p> -->
+        <!-- </div> -->
+        <img id="myImage" src="https://assets.sentinelassam.com/h-upload/2022/02/18/720x1280_314005-0.jpg" alt="Baby Image" width="400">
+
+        <p id="what">hey there! how's thing is going on ?</p>
+
+        <script>
+            // get html element by getElementById method
+            const elem = document.getElementById('hey');
+            console.log(elem); // will return h1 element of html page
+            elem.innerHTML = "Hey There!";
+
+            const element = document.getElementById('there');
+            console.log(element); //this will return null, because above element is not exist having id = 'there'
+
+            // find the element by tag name
+            // const el = document.getElementsByTagName('p');
+            // el.forEach(element => {
+            //     console.log(element);
+            // });
+
+            // find the element using class name
+            const x = document.getElementsByClassName('what');
+            console.log(x);
+
+            // finding the element using CSS selector
+            const y = document.querySelectorAll("p.intro");
+            console.log(y[0].innerHTML);
+
+            // changing the content of html element
+            document.getElementById("what").innerHTML = "yeah, I am going to learn about Html";
+
+            const element1 = document.getElementById('intro');
+            element1.innerHTML = "yeah! you are right";
+
+            // changing the attribute of the element
+
+            document.getElementById('myImage').src = "https://i.pinimg.com/736x/39/54/61/39546105d816545c2ad7ef305021a94a.jpg";
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <button id="myBtn">Try it!</button>
+        <p id="demo"></p>
+        <script>
+            //add an event litener that fires when a user click button
+            // document.getElementById("myBtn").addEventListener("click", displayDate);
+            // function displayDate(){
+            //     document.getElementById("demo").innerHTML = Date();
+            // }
+
+            // document.getElementById("myBtn").addEventListener("click",  function(){
+            //     alert("hey! what's up");
+            // });
+
+            // we can add more addeventListener method as we want to add to the same elemnt
+            var x = document.getElementById("myBtn");
+            x.addEventListener("click", myFunction());
+            x.addEventListener("click",  mySecondFunction());
+
+            function myFunction(){
+                alert("Hello world");
+            }
+
+            function mySecondFunction(){
+                alert("this function was also excuted!");
+            }
+        </script>
+    </body>
+
+</html>
