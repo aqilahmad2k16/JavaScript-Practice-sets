@@ -30,5 +30,8 @@ const arr = [1,2,3,25,63,'Aqil', 'Ayan'];
 // forEach:***************************************************************
 //The forEach() method calls a function (a callback function) once for each array element.
 
-arr.forEach(e=>console.log(e));
+// arr.forEach(e=>console.log(e));
+
+// let's apply forEach on object
+person.forEach(e=>console.log(e));
 
