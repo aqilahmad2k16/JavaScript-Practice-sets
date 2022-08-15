@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hey there let's learn about CSS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                background-color: yellow;
+                width: 400px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+            }
+
+            /* for extra small device (phones, 600px and down) */
+            @media only screen and (max-width: 600px){
+                body{
+                    background-color: red;
+                }
+            }
+
+            /* Small device (portrait tablets and large phone, 600px and up) */
+            @media only screen and (min-width: 600px){
+                body{
+                    background-color: blue;
+                }
+            }
+
+            /* medium devices (landscapes tablets, 768px and up) */
+            @media only screen and (min-width: 768px){
+                body{
+                    background-color: green;
+                }
+            }
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px){
+                body{
+                    background-color: yellow;
+                }
+            }
+
+            /* extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px){
+                body{
+                    background-color: grey;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div>
+            I am going to learn about html and CSS!
+        </div>
+    </body>
+</html>
